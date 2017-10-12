@@ -3,56 +3,76 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
+@import url('//fonts.googleapis.com/css?family=Muli:300')
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
+// Very simple reset for the needs of this pen
+html, body, div, img, h1
+  margin: 0
+  padding: 0
+  outline: 0
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 12px;
-}
+body
+  background: #00838f
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
+.profile
+  // Only $profileW (width) is required.
+  // Everything else is automatically calculated.
+  $profileW: 600px
+  $profileH: $profileW / 5 * 2
+  $picSize: $profileH
+  $textContainerWidth: $profileW - $picSize
+  $textContainerMarginLeft: $profileW - $textContainerWidth + 16px
 
-button:hover, a:hover {
-  opacity: 0.7;
-}
+  width: $profileW
+  height: $profileH
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  margin: auto
+  font-family: 'Muli', sans-serif
+  color: #e0f7fa
+  
+  .profile-pic
+    width: $picSize
+    height: $picSize
+    float: left
+    border-radius: 50% 0
+    box-shadow: 0 0 10px rgba(0,0,0,.3)
+  
+  .text-container
+    width: $textContainerWidth
+    margin-left: $textContainerMarginLeft
+    padding-top: $profileH / 7 * 2
+    text-align: center
+    text-shadow: 0 0 15px rgba(0,0,0,.1)
+  
+  h1
+    margin-bottom: $profileH / 7
+    font-weight: 400
+    font-size: 2.8em
+    line-height: 1em
+    letter-spacing: -1px
+    text-transform: uppercase
+
+  .title
+    font-size: 1.4em
+    letter-spacing: 1px
 </style>
 </head>
 <body>
 
-<div class="card">
-  <img src="zee.png" alt="Zeeshan" style="width:50%; height:50%">
-  <h1>Zeeshan Ali Sayyed</h1>
-  <p class="title">Android Developer</p>
-  <p>Nagpur, India</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
- <p><button>Contact: zeeshanali.sayyed1@gmail.com</button></p>
+<div class="profile">
+  <img class="profile-pic" src="http://lorempixel.com/g/280/280/people/1/" />
+  <div class="text-container">
+    <h1>
+      Sayyed Zeeshan Ali
+    </h1>
+    <div class="title">
+      Software Developer
+    </div>
+  </div>
 </div>
 
 </body>

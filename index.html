@@ -1,70 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-@import url('//fonts.googleapis.com/css?family=Muli:300')
+@import url("//fonts.googleapis.com/css?family=Muli:300");
+html, body, div, img, h1 {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
 
-// Very simple reset for the needs of this pen
-html, body, div, img, h1
-  margin: 0
-  padding: 0
-  outline: 0
+body {
+  background: #00838f;
+}
 
-body
-  background: #00838f
-
-.profile
-  // Only $profileW (width) is required.
-  // Everything else is automatically calculated.
-  $profileW: 600px
-  $profileH: $profileW / 5 * 2
-  $picSize: $profileH
-  $textContainerWidth: $profileW - $picSize
-  $textContainerMarginLeft: $profileW - $textContainerWidth + 16px
-
-  width: $profileW
-  height: $profileH
-  position: fixed
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  margin: auto
-  font-family: 'Muli', sans-serif
-  color: #e0f7fa
-  
-  .profile-pic
-    width: $picSize
-    height: $picSize
-    float: left
-    border-radius: 50% 0
-    box-shadow: 0 0 10px rgba(0,0,0,.3)
-  
-  .text-container
-    width: $textContainerWidth
-    margin-left: $textContainerMarginLeft
-    padding-top: $profileH / 7 * 2
-    text-align: center
-    text-shadow: 0 0 15px rgba(0,0,0,.1)
-  
-  h1
-    margin-bottom: $profileH / 7
-    font-weight: 400
-    font-size: 2.8em
-    line-height: 1em
-    letter-spacing: -1px
-    text-transform: uppercase
-
-  .title
-    font-size: 1.4em
-    letter-spacing: 1px
+.profile {
+  width: 600px;
+  height: 240px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  font-family: "Muli", sans-serif;
+  color: #e0f7fa;
+}
+.profile .profile-pic {
+  width: 240px;
+  height: 240px;
+  float: left;
+  border-radius: 50% 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.profile .text-container {
+  width: 360px;
+  margin-left: 256px;
+  padding-top: 68.57143px;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.profile h1 {
+  margin-bottom: 34.28571px;
+  font-weight: 400;
+  font-size: 2.8em;
+  line-height: 1em;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+.profile .title {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
 </style>
 </head>
 <body>
 
 <div class="profile">
-  <img class="profile-pic" src="http://lorempixel.com/g/280/280/people/1/" />
+  <img class="profile-pic" src="zee.png" />
   <div class="text-container">
     <h1>
       Sayyed Zeeshan Ali

@@ -13,15 +13,12 @@ body{
 	margin: 0;
 	text-align: left;
     margin-left: 130px;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 .rw-sentence span {
     color: #000;
-    white-space: nowrap;
     font-size: 30px;
     text-align: center;
-    font-weight: normal;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+    font-weight: bold;
 }
 .rw-words{
 	display: inline;

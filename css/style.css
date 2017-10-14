@@ -1321,7 +1321,7 @@ img.zoom-img:hover {
 }
 @media screen and (max-width: 384px){
 	.rw-sentence span {
-		font-size: 19px;
+		font-size: 18px;
 	}
 	.about h3.heading {
 		width: 43%;
